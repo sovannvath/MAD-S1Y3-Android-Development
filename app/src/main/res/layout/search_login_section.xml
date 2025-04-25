@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:background="#FDF6FF"> <!-- Optional: light background color like in your image -->
+
+    <!-- Search Box -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/search_input_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"
+            android:layout_marginEnd="8dp"
+            app:tint="#9E9E9E" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Search Products..."
+            android:textSize="14sp"
+            android:background="@android:color/transparent"
+            android:textColorHint="#9E9E9E"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/purple_button_bg"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/purple_button_bg"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>

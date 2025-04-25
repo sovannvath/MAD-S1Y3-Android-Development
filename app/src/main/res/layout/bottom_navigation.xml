@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <!-- Home -->
+    <LinearLayout
+        android:id="@+id/navHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_icon"
+            app:tint="#2196F3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#2196F3"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Message -->
+    <LinearLayout
+        android:id="@+id/navMessage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/message_icon"
+            app:tint="#FF9800" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="#FF9800"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Add (FAB) -->
+    <LinearLayout
+        android:id="@+id/navAdd"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#7B1FA2"
+            app:borderWidth="0dp"
+            app:srcCompat="@drawable/add_icon"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Cart -->
+    <LinearLayout
+        android:id="@+id/navCart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/add_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Profile -->
+    <LinearLayout
+        android:id="@+id/navProfile"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/profile_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
