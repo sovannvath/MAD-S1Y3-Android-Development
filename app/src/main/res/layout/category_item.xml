@@ -16,6 +16,7 @@
             android:id="@+id/categoryIcon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="@string/todo"
             android:padding="16dp"
             android:src="@drawable/ic_placeholder" />
     </androidx.cardview.widget.CardView>
@@ -25,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Category"
+        android:text="@string/category"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp" />
