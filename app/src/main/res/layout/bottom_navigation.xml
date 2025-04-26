@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomNavigationLayout"
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:background="#FFFFFF"
+    android:baselineAligned="false"
     android:orientation="horizontal">
 
     <!-- Home -->
@@ -13,15 +16,20 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:tag="home"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
+            android:id="@+id/navHomeIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="Home"
             android:src="@drawable/home_icon"
             app:tint="#2196F3" />
 
         <TextView
+            android:id="@+id/navHomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Home"
@@ -36,15 +44,20 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:tag="message"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
+            android:id="@+id/navMessageIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:contentDescription="Message"
             android:src="@drawable/message_icon"
             app:tint="#FF9800" />
 
         <TextView
+            android:id="@+id/navMessageText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Message"
@@ -58,32 +71,41 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center">
+        android:gravity="center"
+        android:tag="add">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/navAddButton"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:backgroundTint="#7B1FA2"
+            android:contentDescription="Add"
             app:borderWidth="0dp"
             app:srcCompat="@drawable/add_icon"
             app:tint="#FFFFFF" />
     </LinearLayout>
 
-    <!-- Cart -->
+    <!-- Card -->
     <LinearLayout
         android:id="@+id/navCart"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:tag="cart"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
+            android:id="@+id/navCartIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/add_icon" />
+            android:contentDescription="Card"
+            android:src="@drawable/add_icon"
+            app:tint="#000000" />
 
         <TextView
+            android:id="@+id/navCartText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Card"
@@ -98,14 +120,20 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:tag="profile"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
+            android:id="@+id/navProfileIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/profile_icon" />
+            android:contentDescription="Profile"
+            android:src="@drawable/profile_icon"
+            app:tint="#000000" />
 
         <TextView
+            android:id="@+id/navProfileText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Profile"
