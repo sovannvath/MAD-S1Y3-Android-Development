@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="12dp"
+        android:text="Pet Accessories"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <!-- Pet Items - Using include to repeat the same layout -->
+            <include layout="@layout/pet_item"
+                android:id="@+id/petItem1"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <include layout="@layout/pet_item"
+                android:id="@+id/petItem2"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <include layout="@layout/pet_item"
+                android:id="@+id/petItem3"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <include layout="@layout/pet_item"
+                android:id="@+id/petItem4"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <include layout="@layout/pet_item"
+                android:id="@+id/petItem5"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="4dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- See All Link -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp">
+
+        <TextView
+            android:id="@+id/seeAllLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="See all >>"
+            android:textColor="#000000" />
+    </RelativeLayout>
+</LinearLayout>

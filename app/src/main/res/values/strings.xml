@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MAD-android-Ecommerce</string>
+    <string name="search_product" >Search Products…</string>
+    <string name="all_categories">All Categories</string>
+    <string name="home">Home</string>
+    <string name="message">Message</string>
+    <string name="add">Add</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
 </resources>
